@@ -39,6 +39,8 @@ public class User {
     @Column(nullable = false, unique=true)
     private String email;
     @Column(nullable = false)
+    private String phoneNumber;
+    @Column(nullable = false)
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
